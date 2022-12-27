@@ -10,7 +10,7 @@ class TaskManager(tk.Tk):
         self.task_frame.pack(side="top", fill="x")
         self.task_list = tk.Listbox(self.task_frame, width=50)
         self.task_list.pack(side="left")
-#
+
         self.scrollbar = tk.Scrollbar(self.task_frame)
         self.scrollbar.pack(side="right", fill="y")
         self.task_list.config(yscrollcommand=self.scrollbar.set)
